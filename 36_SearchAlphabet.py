@@ -1,7 +1,12 @@
-alphabets = input()
-alphabet_list = [i for i in range(97, 123)]
+word = input()
+lst = []
+for i in range(97, 123):
+    if chr(i) in word:
+        words = chr(i)
+        b = word.index(words)
+        lst.append(b)
+    else:
+        lst.append(-1)
 
-for i in range(len(alphabet_list)):
-    for alphabet in alphabets:
-        if alphabet_list[i] == alphabet:
-            alphabet_list[i] =
+for j in lst:
+    print(j, end=" ")
